@@ -1,0 +1,147 @@
+.container {
+    width: 600px;
+   height: auto;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 12px;
+    background-image: linear-gradient(#ef50ff, #3366ff);
+
+}
+
+.topbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.cityinput {
+    display: flex;
+    border: 2px solid rgb(8, 8, 8);
+    height: 25px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.topbar img {
+    /* filter: invert(-1); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.weatherimage {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.weather_temp {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.weather_location {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.data-container {
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.element {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+    overflow: hidden;
+    padding-left: 10px;
+
+}
+.element img{
+    width: 100px;
+    height: 100px;
+
+}
+
+.data {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.search_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 450px) {
+    .container {
+        width: 90%;
+        height: 100%;
+        margin-top: 30px;
+        font-size: 10px;
+
+    }
+
+    .weatherimage {
+        max-width: 100px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .data-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 35px;
+    }
+
+    .data,
+    .text {
+        display: flex;
+        font-size: 15px;
+        font-weight: 400;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .text{
+        margin-left: -15px;
+        margin-bottom: -10px;
+    }
+
+    .element img{
+        margin-bottom: 10px;
+    }
+    
+}
